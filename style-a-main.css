@@ -1,15 +1,21 @@
 body {
   background-color: #010914;
-  color: #ffffff;
+  color: #d8d8d8;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   /* margin: 0; */
   /* padding: 40px; */
   
 }
 main{
-  padding:  0px 5%;
+  padding:  0px 10%;
 
 }
+article{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 
 /* Основной блок интро */
 .intro {
@@ -102,6 +108,16 @@ main{
   border-radius: 20px;
   padding: 2em;
 }
+.block > h1,.block-title{
+  margin-bottom: 1.5em;
+}
+.block > p,ul{
+  margin-bottom: 1em;
+}
+
+.block li{
+  margin-left: 1.5em;
+}
 
 .icon-block{
   display: inline;
@@ -115,6 +131,7 @@ main{
 
 }
 .block-button{
+  margin-top: 1em;
   padding: 1em;
   background-color: #010914;
   width: 100%;
@@ -124,9 +141,75 @@ main{
   border: 1px solid #5f75ad;
 }
 
+.about-and-meme{
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 3fr;
+}
 
+.quotes{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1em;
+}
+.quotes p{
+  font-size: 1.2em;
 
+}
+.icon-block-quotes{
+  color: #5a53e0;
+  font-size: 3em;
+  font-weight: bold;
+}
+.quotes-author{
+  margin-top: 1em;
+  color: #5a53e0;
+}
 
+.meme{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1em;
+  height: 70%;
+}
+.meme div{
+  background-color: #010914;
+  border-radius: 15px;
+}
+
+.study{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 2em;
+}
+.study > div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+}
+.study > div span{
+  display: block;
+  aspect-ratio: 1/1;
+  width: 30%;
+  
+}
+
+.mega-block{
+  border: none;
+  background-image: radial-gradient(
+        circle at 10% 100%, 
+        rgba(56, 52, 116, 0.6) 0%, 
+        rgba(26, 31, 74, 0.3) 35%, 
+        transparent 75%
+    ),
+    radial-gradient(
+            circle at 90% 0%, 
+            rgba(48, 44, 100, 0.6) 0%, 
+            rgba(26, 31, 74, 0.3) 35%, 
+            transparent 75%
+    );
+}
 
 
 /* Адаптивность для мобильных экранов */
