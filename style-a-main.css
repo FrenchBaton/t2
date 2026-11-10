@@ -1,0 +1,150 @@
+body {
+  background-color: #010914;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* margin: 0; */
+  /* padding: 40px; */
+  
+}
+main{
+  padding:  0px 5%;
+
+}
+
+/* Основной блок интро */
+.intro {
+  
+  display: grid;
+  background-color: #010914;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  /* gap: 2em; */
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  height: 95vh;
+  position: relative;
+}
+
+.intro-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  z-index: 2;
+  
+}
+
+.intro h1 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  max-width: 450px;
+}
+
+/* Кнопки */
+.intro a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+  margin-right: 12px;
+}
+
+/* Первая кнопка (основная) */
+.intro a:first-of-type {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.intro a:first-of-type:hover {
+  background-color: #4338ca;
+}
+
+/* Вторая кнопка (второстепенная) */
+.intro a:last-of-type {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.intro a:last-of-type:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Черный квадрат-заглушка вместо картинки */
+.image-placeholder {
+  right: 0;
+  top: 0;
+  position: absolute;
+  height: 95vh;
+  background-color: #000000;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+.image-placeholder img{
+  height: 100%;
+}
+
+
+.block{
+  background-color: #0b0f19;
+  border: 1px solid #2a3a62;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+.icon-block{
+  display: inline;
+  font-size: 2em;
+  font-weight: bold;
+}
+.block-title {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+
+}
+.block-button{
+  padding: 1em;
+  background-color: #010914;
+  width: 100%;
+  border-radius: 15px;
+  color: #5f75ad;
+  font-size: medium;
+  border: 1px solid #5f75ad;
+}
+
+
+
+
+
+
+/* Адаптивность для мобильных экранов */
+@media (max-width: 850px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro a {
+    margin-bottom: 10px;
+  }
+  .image-placeholder {
+    width: 100%;
+    max-width: 450px;
+    height: 260px;
+  }
+}
