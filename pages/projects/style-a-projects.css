@@ -1,0 +1,130 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.proj-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    gap: 1em;
+    height: 30vh;
+    width: 50%;
+}
+.proj-intro h1{
+    font-size: 4em;
+}
+.proj-intro p{
+    font-size: 1.7em;
+}
+.proj-intro-img{
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    height: 30vh;
+}
+.proj-intro-img img{
+    height: 30vh;
+}
+
+.left-bar{
+    padding: 20px;
+    color: #b581f8;
+
+}
+
+.left-bar-content .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.left-bar-content .logo span {
+  background: none;
+  color: #6837a9;
+  font-size: 3em;
+  padding: 1em 1.2em; /* Внутренний отступ иконки `</>` */
+  /* border-radius: 6px; */
+  /* font-weight: bold; */
+  font-family: monospace;
+}
+
+
+.project-block{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.project-block-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tegs{
+    display: flex;
+    gap: 1em;    
+}
+.tegs p{
+    padding: 0.7em;
+    background-color: rgba(99, 102, 241, 0.2);
+    color: #81b1f8;
+    border-radius: 50px; 
+}
+
+.preview{
+    aspect-ratio: 2/1;
+    height: 20vh;
+    margin-right: 1em;
+}
+
+.preview{
+    
+}
+
+.mid{
+    color: rgb(230, 179, 25); 
+    text-align: end;
+    font-weight: bold;
+}
+.easy{
+    color: rgb(77, 215, 56); 
+    text-align: end;
+    font-weight: bold;
+
+}
+.hard{
+    color: rgb(230, 69, 25); 
+    text-align: end;
+    font-weight: bold;
+}
+
+.project-block-content-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-block-content-right button{
+  padding: 14px 28px;
+  background-color: #4432c4;
+  background-image: linear-gradient(135deg, #523ce2 0%, #3824a7 100%);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(68, 50, 196, 0.4);
+  transition: all 0.3s ease;
+}

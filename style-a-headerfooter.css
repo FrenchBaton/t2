@@ -17,7 +17,7 @@ header {
 }
 
 /* Логотип */
-header > a {
+.logo {
   display: flex;
   align-items: center;
   gap: 10px; /* Отступ между иконкой и текстом логотипа */
@@ -25,7 +25,7 @@ header > a {
   color: #ffffff;
 }
 
-header > a span {
+.logo span {
   background-color: rgba(99, 102, 241, 0.2);
   color: #818cf8;
   padding: 6px 8px; /* Внутренний отступ иконки `</>` */
