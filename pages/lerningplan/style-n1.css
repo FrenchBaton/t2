@@ -1,0 +1,314 @@
+
+     body {
+    background-color: #0b0c16; /* Темный фон сайта */
+    color: #ffffff;            /* Белый текст */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+
+/* --- CONTAINER & BREADCRUMBS --- */
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #8b92b5; /* Тусклый текст */
+    margin-bottom: 20px;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    color: #8b92b5;
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+/* --- TABS --- */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    background: #131526; /* Фон карточки */
+    border: 1px solid #222540; /* Цвет границ */
+    color: #8b92b5;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.tab-btn.active {
+    background: #4c3ba8; /* Яркий фиолетовый акцент */
+    color: #ffffff;
+    border-color: transparent;
+}
+
+/* --- MAIN GRID --- */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-block {
+    background: #131526;
+    border: 1px solid #222540;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.block-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.block-title h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.block-title p {
+    color: #8b92b5;
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+/* --- ROADMAP (LEFT BLOCK) --- */
+.roadmap-subtabs {
+    display: flex;
+    gap: 5px;
+    background: #0b0c16;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 1px solid #222540;
+    width: fit-content;
+}
+
+.subtab-btn {
+    background: transparent;
+    border: none;
+    color: #8b92b5;
+    padding: 6px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.subtab-btn.active {
+    background: #4c3ba8;
+    color: #ffffff;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #222540;
+}
+
+.step-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.step-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.step-num {
+    width: 32px;
+    height: 32px;
+    background: #4c3ba8;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-info h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.step-info p {
+    color: #8b92b5;
+    font-size: 0.8rem;
+}
+
+.step-info span {
+    display: block;
+    color: #a594f9; /* Светло-фиолетовый текст */
+    font-size: 0.75rem;
+    margin-top: 4px;
+}
+
+.step-right {
+    text-align: right;
+}
+
+.step-progress {
+    font-size: 0.85rem;
+    color: #8b92b5;
+}
+
+/* --- REGULARITY BANNER --- */
+.regularity-banner {
+    margin-top: 25px;
+    background: rgba(76, 59, 168, 0.05);
+    border: 1px dashed #4c3ba8;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.regularity-banner h4 {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.regularity-banner p {
+    color: #8b92b5;
+    font-size: 0.85rem;
+}
+
+/* --- ADVICE SECTION (RIGHT BLOCK) --- */
+.advice-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Ровно 2 колонки */
+    gap: 30px 25px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+    .advice-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.advice-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.advice-icon svg {
+    stroke: #a594f9; /* Прямой цвет для маленьких иконок */
+}
+
+.advice-icon {
+    color: #a594f9;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.advice-content h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.advice-content p {
+    color: #8b92b5;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* --- EXTRA RECOMMENDATIONS --- */
+.extra-recommendations {
+    margin-top: 30px;
+    border-top: 1px solid #222540;
+    padding-top: 25px;
+}
+
+.extra-recommendations h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.extra-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.extra-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #8b92b5;
+}
+
+.extra-list li svg {
+    color: #a594f9;
+}
+
+.see-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    background: #4c3ba8;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.see-all-btn:hover {
+    gap: 12px;
+}

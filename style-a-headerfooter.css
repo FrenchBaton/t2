@@ -6,6 +6,9 @@
 
 /* 2. Шапка сайта (возвращаем внутренние отступы контейнера) */
 header {
+  position: fixed;
+  z-index: 10;
+  top:0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,6 +17,13 @@ header {
   color: #ffffff;
   font-family: system-ui, -apple-system, sans-serif;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  height: 5vh;
+  width: 100%;
+}
+
+main{
+  /* background-color: #8558e7; */
+  margin-top: 5vh;
 }
 
 /* Логотип */

@@ -1,0 +1,42 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.text{
+    color: white;
+    font-weight: bold;
+    padding:40px;
+}
+.div1{
+    display:flex;
+}
+.div2{
+    display:inline-flex;
+    background-color: #0e1d3d;
+    border: 1px solid #1a4092;
+    border-radius: 20px;
+    margin:40px;
+    height:500px;
+}
+.div3{
+    background-color: #1d325e;
+     color:#6e81aa;
+     padding:10px;
+     border-radius: 10px;
+}
+.forimg{
+    width:80%;
+    height:auto;
+}
+.button{
+    position: absolute;
+    bottom: 20px;
+    right:40px; 
+    color:rgb(185, 87, 185); 
+    border: 1px solid rgb(185, 87, 185); 
+    border-radius:10px;
+}
+.button:hover{
+    background-color: rgb(185, 87, 185);
+    color:white;
+}

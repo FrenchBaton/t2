@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Рекомендуется всегда добавлять для удобного расчета ширины */
+}
+
+/* 2. Шапка сайта (возвращаем внутренние отступы контейнера) */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px; /* Внутренние отступы шапки сверху/снизу и по бокам */
+  background-color: #0b0f19;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Логотип */
+header > a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Отступ между иконкой и текстом логотипа */
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header > a span {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+  padding: 6px 8px; /* Внутренний отступ иконки `</>` */
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+header > a div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+header > a strong {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+header > a small {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+header nav {
+  display: flex;
+  gap: 20px; 
+}
+
+header nav a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px; 
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+header nav a:hover {
+  color: #ffffff;
+}
+
+header nav a[class*="active"] {
+  /* color: #ffffff; */
+  color: #8558e7;
+  text-shadow: 0 0px 5px #818cf8;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Блок с кнопками действий (Поиск и Тема) */
+header > div {
+  display: flex;
+  gap: 12px; 
+}
+
+header > div button {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 6px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: color 0.2s ease;
+}
+
+header > div button:hover {
+  color: #ffffff;
+}
+
+footer {
+  background-color: #060913;
+  color: #9ca3af;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Верхняя сетка с колонками */
+footer > div:first-child {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px 40px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 40px;
+}
+
+/* --- Колонка 1: Логотип и описание --- */
+footer > div:first-child > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+footer > div:first-child > div:nth-child(1) > a:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer > div:first-child > div:nth-child(1) span {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+footer > div:first-child > div:nth-child(1) div div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+footer > div:first-child > div:nth-child(1) strong {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+footer > div:first-child > div:nth-child(1) small {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+footer > div:first-child > div:nth-child(1) p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #9ca3af;
+}
+
+/* Иконки соцсетей в первой колонке */
+footer > div:first-child > div:nth-child(1) > div:last-child {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+footer > div:first-child > div:nth-child(1) > div:last-child a {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+footer > div:first-child > div:nth-child(1) > div:last-child a:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* --- Колонки 2 и 3: Списки навигации --- */
+footer h4 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+footer ul {
+  list-style: none; /* Убираем точки у списков (поскольку глобально делали сброс) */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer ul a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s ease;
+}
+
+footer ul a:hover {
+  color: #ffffff;
+}
+
+/* --- Колонка 4: Цитата справа --- */
+footer blockquote {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer blockquote span {
+  color: #818cf8;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+footer blockquote p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #d1d5db;
+}
+
+/* --- Нижняя полоса с копирайтом --- */
+footer > div:last-child {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #6b7280;
+}
