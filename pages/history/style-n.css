@@ -1,22 +1,76 @@
 body{
     margin:0px;
     padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .text{
     color: white;
     font-weight: bold;
-    padding:40px;
+    padding-bottom: 0.2em;
 }
-.div1{
+.div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.div1-right-item{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+
+}
+.div1-item{
+    align-items: center;
+    vertical-align: middle;
+    /* display:flex;
+    flex-direction: column; */
+    /* justify-content: start; */
+    /* text-align: center; */
+}
+.div1-start{
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.div1-right {
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 60px 1fr; /* Фиксированная ширина для иконки и резиновая для текста (в сумме не превышает 100%) */
+    gap: 1.5em 1em; /* Отступы между строками и колонками */
+    align-items: start; /* Выравнивает иконку по верхнему краю заголовка */
+    position: relative; 
+    padding-bottom: 100px /* Отступ снизу, чтобы абсолютная кнопка не перекрывала контент */
+}
+.div1-right > div{
+    display: flex;
+    gap: 1em;
+}
+.div1-icon {
+    margin: 1em;
+    width: 50px; 
+    height: 50px;
+}
+.div1-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(5);
 }
 .div2{
-    display:inline-flex;
+    display:grid;
+    grid-template-columns: 1fr 5fr 1.5fr;
     background-color: #0e1d3d;
     border: 1px solid #1a4092;
     border-radius: 20px;
-    margin:40px;
-    height:500px;
+    /* margin:40px; */
+    /* height:500px; */
 }
 .div3{
     background-color: #1d325e;
@@ -24,17 +78,18 @@ body{
      padding:10px;
      border-radius: 10px;
 }
-.forimg{
-    width:80%;
-    height:auto;
-}
-.button{
+.button {
     position: absolute;
-    bottom: 20px;
-    right:40px; 
-    color:rgb(185, 87, 185); 
+    bottom: 15px;
+    right: 15px; 
+    color: rgb(185, 87, 185); 
     border: 1px solid rgb(185, 87, 185); 
-    border-radius:10px;
+    border-radius: 10px;
+}
+.button span {
+    padding: 10px 20px; 
+    cursor: pointer;
+    display: block;
 }
 .button:hover{
     background-color: rgb(185, 87, 185);
@@ -50,6 +105,55 @@ main
 h1{
     font-size: 2em;
 }
-p, li{
+p, li, span{
     font-size: 1em;
+}
+
+
+.tags{
+    display: flex;
+    gap: 1em;
+}
+
+.intro-history{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-history-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.intro-history-img{
+    position: relative;
+    width: 100%;
+
+    /* top:10vh */
+}
+.intro-history-img div{
+    height: 30vh;
+    top: 0px;
+    position: absolute;
+    right: 0px;
+    /* z-index: -1; */
+}
+.intro-history-img img{
+    height: 100%;
+    width: auto;
+}
+.forimg{
+    width:50%;
+}
+.forimg img{
+    width:100%;
+    height:auto;
+}
+
+.divs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
 }
