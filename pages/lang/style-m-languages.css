@@ -125,3 +125,8 @@ h1 {
 p, li{
     font-size: 1em;
 }
+
+.langbutton a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
