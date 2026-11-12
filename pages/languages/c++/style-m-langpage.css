@@ -14,6 +14,9 @@ body {
 {
     padding:60px;
     display:flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 2em;
 }
 
 .langpage .langleftside{
@@ -171,4 +174,11 @@ body {
 
 .clear{
     clear: both;
+}
+
+h1{
+    font-size: 2em;
+}
+p, li{
+    font-size: 1em;
 }

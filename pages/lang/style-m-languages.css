@@ -12,8 +12,9 @@ body {
 
 .langbody
 {
-    padding:60px;
-    
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 2em;
 }
 
 .language {
@@ -116,4 +117,11 @@ body {
 .langbutton .button2:hover{
     background-color: #080e1d;
     cursor:pointer;
+}
+
+h1 {
+    font-size: 2em;
+}
+p, li{
+    font-size: 1em;
 }

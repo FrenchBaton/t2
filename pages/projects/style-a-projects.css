@@ -1,6 +1,9 @@
 main{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 2em;
 }
 
 article{
@@ -127,4 +130,11 @@ article{
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(68, 50, 196, 0.4);
   transition: all 0.3s ease;
+}
+
+h1{
+    font-size: 2em;
+}
+p, li{
+    font-size: 1em;
 }

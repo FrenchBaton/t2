@@ -73,6 +73,9 @@
     grid-template-columns: 1.2fr 1fr;
     gap: 30px;
     align-items: start;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 2em;
 }
 
 @media (max-width: 992px) {
@@ -311,4 +314,12 @@
 
 .see-all-btn:hover {
     gap: 12px;
+}
+
+
+h1{
+    font-size: 2em;
+}
+p, li{
+    font-size: 1em;
 }

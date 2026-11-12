@@ -40,3 +40,16 @@ body{
     background-color: rgb(185, 87, 185);
     color:white;
 }
+
+main
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 2em;
+}
+h1{
+    font-size: 2em;
+}
+p, li{
+    font-size: 1em;
+}

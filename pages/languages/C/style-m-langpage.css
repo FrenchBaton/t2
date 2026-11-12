@@ -14,6 +14,9 @@ body {
 {
     padding:60px;
     display:flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 2em;
 }
 
 .langpage .langleftside{
@@ -128,8 +131,6 @@ body {
 }
 
 .codeexample{
-    position: sticky;
-    top:10vh;
     border: 1px solid #0F1829;
     padding:16px;
     width:100%;
@@ -173,4 +174,11 @@ body {
 
 .clear{
     clear: both;
+}
+
+h1{
+    font-size: 2em;
+}
+p, li{
+    font-size: 1em;
 }
